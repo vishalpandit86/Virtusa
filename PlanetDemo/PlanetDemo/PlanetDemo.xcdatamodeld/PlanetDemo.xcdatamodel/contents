@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="17G4015" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Asteroids" representedClassName="Asteroids" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="climate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diameter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="edited" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="films" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="gravity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orbitalPeriod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="residents" attributeType="Transformable" customClassName="[String]" syncable="YES"/>
+        <attribute name="rotationPeriod" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surfaceWater" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="terrain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asteroids" positionX="-54" positionY="-9" width="128" height="255"/>
+    </elements>
+</model>

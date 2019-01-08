@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PNE-ux-be7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planets-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlanetsViewController" customModule="PlanetDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eNK-g8-s8d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q7m-th-FTJ">
+                                <rect key="frame" x="12" y="10" width="350" height="533"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="92" id="vyD-Bd-dEL">
+                                        <rect key="frame" x="0.0" y="28" width="350" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vyD-Bd-dEL" id="F2X-Of-JNy">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="91.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="CJq-wR-x4g"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4S8-mK-2He"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-xK-XWe">
+                                <rect key="frame" x="16" y="548" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.69019607839999997" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Xag-fW-LIe"/>
+                                </constraints>
+                                <state key="normal" title="Delete Records">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="deletePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9sB-c9-6V9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ogf-xK-XWe" firstAttribute="leading" secondItem="fzH-Qf-BeK" secondAttribute="leading" constant="16" id="4Am-ay-Fwp"/>
+                            <constraint firstItem="Q7m-th-FTJ" firstAttribute="top" secondItem="fzH-Qf-BeK" secondAttribute="top" constant="10" id="E2s-nS-JKQ"/>
+                            <constraint firstItem="fzH-Qf-BeK" firstAttribute="trailing" secondItem="Ogf-xK-XWe" secondAttribute="trailing" constant="16" id="GDo-iW-Jqr"/>
+                            <constraint firstItem="fzH-Qf-BeK" firstAttribute="bottom" secondItem="Ogf-xK-XWe" secondAttribute="bottom" constant="5" id="Gwx-zL-jQj"/>
+                            <constraint firstItem="Q7m-th-FTJ" firstAttribute="leading" secondItem="fzH-Qf-BeK" secondAttribute="leading" constant="12" id="RP5-Ym-9o4"/>
+                            <constraint firstItem="Ogf-xK-XWe" firstAttribute="top" secondItem="Q7m-th-FTJ" secondAttribute="bottom" constant="5" id="iJX-7H-bN7"/>
+                            <constraint firstItem="fzH-Qf-BeK" firstAttribute="trailing" secondItem="Q7m-th-FTJ" secondAttribute="trailing" constant="13" id="v6X-tR-im3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fzH-Qf-BeK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Planets" id="H9x-ck-J4W"/>
+                    <connections>
+                        <outlet property="tableView" destination="Q7m-th-FTJ" id="Ulp-67-9aD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="179"/>
+        </scene>
+        <!--Planets-->
+        <scene sceneID="zMP-gO-bQP">
+            <objects>
+                <navigationController title="Planets" automaticallyAdjustsScrollViewInsets="NO" id="PNE-ux-be7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="OIb-1b-JVX">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="akc-1m-4xL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNC-cB-rxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="180"/>
+        </scene>
+    </scenes>
+</document>
